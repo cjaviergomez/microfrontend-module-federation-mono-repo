@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Productos agregados</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Descripcion del producto</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products">
+        <td data-label="name">{{ item.name }}</td>
+        <td data-label="price">{{ item.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
